@@ -1,0 +1,438 @@
+/* Pollman's Tours & Safaris - Brand Styles */
+:root {
+  --primary-red: #8B2E2E;
+  --dark-red: #6B1F1F;
+  --mustard: #C58B2E;
+  --mustard-hover: #A87425;
+  --light-bg: #F5F5F5;
+  --white: #FFFFFF;
+  --text-dark: #333333;
+  --text-muted: #555555;
+  --border: #E0E0E0;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--light-bg);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== HEADER ========== */
+.top-bar {
+  background: var(--dark-red);
+  color: white;
+  text-align: center;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+
+.top-bar a {
+  color: #FFD700;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.header {
+  background: var(--white);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-red);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo .sun {
+  color: #F4C430;
+  font-size: 1.6rem;
+}
+
+.logo span {
+  font-weight: 400;
+  font-size: 0.95rem;
+  display: block;
+  color: var(--text-muted);
+  margin-top: -4px;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav a {
+  font-weight: 500;
+  color: var(--primary-red);
+  transition: color 0.2s;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: var(--mustard);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--mustard);
+  color: white !important;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: var(--mustard-hover);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--mustard);
+  color: var(--mustard) !important;
+}
+
+.btn-outline:hover {
+  background: var(--mustard);
+  color: white !important;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--primary-red);
+  cursor: pointer;
+}
+
+/* ========== HERO ========== */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  opacity: 0.95;
+}
+
+/* ========== SECTIONS ========== */
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--primary-red);
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+/* ========== SAFARI CARDS ========== */
+.safari-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.safari-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.safari-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.safari-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.safari-card-body {
+  padding: 22px;
+}
+
+.safari-card .duration {
+  color: var(--mustard);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.safari-card h3 {
+  color: var(--primary-red);
+  font-size: 1.35rem;
+  margin-bottom: 6px;
+}
+
+.safari-card .departures {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.safari-card .price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-red);
+  margin-bottom: 16px;
+}
+
+/* ========== ABOUT BOX ========== */
+.about-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: var(--white);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.about-box h2 {
+  color: var(--primary-red);
+  margin-bottom: 15px;
+}
+
+/* ========== CONTACT BOX ========== */
+.contact-box {
+  background: var(--mustard);
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-box a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background: var(--dark-red);
+  color: white;
+  padding: 50px 20px 30px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.footer a {
+  color: rgba(255,255,255,0.85);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer a:hover {
+  color: var(--mustard);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* ========== DETAIL PAGE ========== */
+.page-header {
+  background: var(--primary-red);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+
+.detail-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.detail-content h2 {
+  color: var(--primary-red);
+  margin: 30px 0 15px;
+}
+
+.included-list {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.included-list li {
+  padding: 8px 0 8px 28px;
+  position: relative;
+}
+
+.included-list li::before {
+  content: "●";
+  color: var(--mustard);
+  position: absolute;
+  left: 0;
+  font-size: 1.1rem;
+}
+
+.price-box {
+  background: var(--white);
+  border: 2px solid var(--mustard);
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.price-box .big-price {
+  font-size: 2rem;
+  color: var(--primary-red);
+  font-weight: 700;
+}
+
+/* ========== FORM ========== */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: var(--primary-red);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    gap: 16px;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-box {
+    grid-template-columns: 1fr;
+  }
+
+  .safari-grid {
+    grid-template-columns: 1fr;
+  }
+}
