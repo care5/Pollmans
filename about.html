@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Pollman's Tours & Safaris</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    Interested in going to Tanzania? Visit our sister site <a href="https://www.rangersafaris.com" target="_blank">rangersafaris.com</a>
+  </div>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="sun">☀</span>
+        pollman's
+        <span>tours and safaris ltd</span>
+      </a>
+      <button class="menu-toggle" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="scheduled-safaris.html">Scheduled Safaris</a>
+        <a href="contact.html">Enquire Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <h1>About Us</h1>
+    <p>Kenya’s oldest and most respected tour operator</p>
+  </div>
+
+  <section class="section">
+    <div class="about-box">
+      <div>
+        <h2>The best way to see Kenya</h2>
+        <p>
+          Pollman’s Tours & Safaris is among Kenya’s oldest and most respected tour companies. 
+          Founded in the 1950s by Karl Pollman, Pollman’s has grown to become an industry leader 
+          with more than 200 late-model vehicles meeting the needs of a variety of group and individual 
+          clients and custom designed for the roads of Kenya.
+        </p>
+        <p style="margin-top:15px;">
+          We specialise in scheduled safaris, tailor-made trips, and fly-in safaris across Kenya 
+          and East Africa. Our bilingual driver-guides and carefully selected lodges and camps 
+          ensure every guest enjoys an authentic and memorable experience.
+        </p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600" alt="Safari vehicle" style="border-radius:8px;">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff;">
+    <div style="max-width:900px; margin:0 auto;">
+      <h2 class="section-title">Our Awards</h2>
+      <p class="section-subtitle">
+        We are incredibly proud to have been named:
+      </p>
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:30px;">
+        <div style="background:var(--light-bg); padding:25px 35px; border-radius:8px; text-align:center; min-width:260px;">
+          <div style="font-size:2rem;">🏆</div>
+          <strong>Africa’s Leading Tour Operator 2026</strong><br>
+          <span style="font-size:0.9rem; color:#666;">World Travel Awards</span>
+        </div>
+        <div style="background:var(--light-bg); padding:25px 35px; border-radius:8px; text-align:center; min-width:260px;">
+          <div style="font-size:2rem;">🏆</div>
+          <strong>Kenya’s Leading Tour Operator 2026</strong><br>
+          <span style="font-size:0.9rem; color:#666;">World Travel Awards</span>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:30px; color:#555;">
+        These awards recognise the extraordinary people who make every safari possible — 
+        from our guides and operations teams to our partners across East Africa.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Why choose Pollman’s?</h2>
+    <div class="safari-grid" style="margin-top:30px;">
+      <div style="background:#fff; padding:30px; border-radius:8px; box-shadow:var(--shadow);">
+        <h3 style="color:var(--primary-red); margin-bottom:10px;">200+ Vehicles</h3>
+        <p>Late-model 4×4 safari vehicles with pop-up roofs, guaranteed window seats and bilingual guides.</p>
+      </div>
+      <div style="background:#fff; padding:30px; border-radius:8px; box-shadow:var(--shadow);">
+        <h3 style="color:var(--primary-red); margin-bottom:10px;">Weekly Departures</h3>
+        <p>Multiple scheduled departures every week so you can join a small group or book privately.</p>
+      </div>
+      <div style="background:#fff; padding:30px; border-radius:8px; box-shadow:var(--shadow);">
+        <h3 style="color:var(--primary-red); margin-bottom:10px;">Experienced Since 1950s</h3>
+        <p>Decades of expertise delivering seamless ground handling and unforgettable safari experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Pollman's Tours & Safaris</h4>
+        <p>Kenya's oldest and most respected tour operator since the 1950s.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="scheduled-safaris.html">Scheduled Safaris</a>
+        <a href="contact.html">Enquire Now</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:info@pollmans.com">info@pollmans.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Copyright © 2026 Pollman's Tours and Safaris Ltd. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+      document.querySelector('.nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

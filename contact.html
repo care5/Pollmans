@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquire Now | Pollman's Tours & Safaris</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    Interested in going to Tanzania? Visit our sister site <a href="https://www.rangersafaris.com" target="_blank">rangersafaris.com</a>
+  </div>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="sun">☀</span>
+        pollman's
+        <span>tours and safaris ltd</span>
+      </a>
+      <button class="menu-toggle" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="scheduled-safaris.html">Scheduled Safaris</a>
+        <a href="contact.html" class="active">Enquire Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <h1>Enquire Now</h1>
+    <p>We’re here to help plan your perfect safari</p>
+  </div>
+
+  <section class="section">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; max-width:1000px; margin:0 auto;">
+      
+      <!-- Form -->
+      <div style="background:#fff; padding:35px; border-radius:8px; box-shadow:var(--shadow);">
+        <h2 style="color:var(--primary-red); margin-bottom:20px;">Send us a message</h2>
+        <form onsubmit="event.preventDefault(); alert('Thank you! Your enquiry has been received. We will contact you shortly.');">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" required placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label>Phone / WhatsApp</label>
+            <input type="tel" placeholder="+254 ...">
+          </div>
+          <div class="form-group">
+            <label>Interested in</label>
+            <select>
+              <option>Scenic Kenya (9 Days)</option>
+              <option>Through the Rift Valley (5 Days)</option>
+              <option>Kenya Classic (7 Days)</option>
+              <option>Mombasa Rendezvous (4 Days)</option>
+              <option>Kenya Odyssey to Mombasa (8 Days)</option>
+              <option>Kilimanjaro to Mombasa (5 Days)</option>
+              <option>Kenya Highlights (7 Days)</option>
+              <option>Elewana Sky Safari</option>
+              <option>Private / Tailor-made Safari</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Preferred Travel Dates</label>
+            <input type="text" placeholder="e.g. July 2026 or flexible">
+          </div>
+          <div class="form-group">
+            <label>Number of Travellers</label>
+            <input type="number" min="1" placeholder="2">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell us more about what you’re looking for..."></textarea>
+          </div>
+          <button type="submit" class="btn" style="width:100%;">Send Enquiry</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <div class="contact-box" style="margin-bottom:30px;">
+          <h2 style="margin-bottom:15px;">Here to help</h2>
+          <p style="margin-bottom:10px;"><strong>Email:</strong><br>
+            <a href="mailto:info@pollmans.com">info@pollmans.com</a>
+          </p>
+          <p style="margin-top:20px;">QUICK Contact:</p>
+          <a href="mailto:info@pollmans.com" class="btn" style="background:#fff; color:var(--mustard) !important; margin-top:10px;">Request a call back</a>
+        </div>
+
+        <div style="background:#fff; padding:30px; border-radius:8px; box-shadow:var(--shadow);">
+          <h3 style="color:var(--primary-red); margin-bottom:15px;">Newsletter</h3>
+          <p style="margin-bottom:15px; font-size:0.95rem;">
+            To keep in touch with news from the Pollman’s team and to receive our e-newsletter, please leave your e-mail address below.
+          </p>
+          <form onsubmit="event.preventDefault(); alert('Thank you for signing up!');" style="display:flex; gap:8px;">
+            <input type="email" required placeholder="Email Address" style="flex:1; padding:12px; border:1px solid #ddd; border-radius:4px;">
+            <button type="submit" class="btn">Sign up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Pollman's Tours & Safaris</h4>
+        <p>Kenya's oldest and most respected tour operator since the 1950s.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="scheduled-safaris.html">Scheduled Safaris</a>
+        <a href="contact.html">Enquire Now</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:info@pollmans.com">info@pollmans.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Copyright © 2026 Pollman's Tours and Safaris Ltd. All Rights Reserved.<br>
+      <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+      document.querySelector('.nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
