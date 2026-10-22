@@ -9,171 +9,164 @@
 <body>
 
   <div class="top-bar">
-    Interested in going to Tanzania? Visit our sister site <a href="https://www.rangersafaris.com" target="_blank">rangersafaris.com</a>
+    Interested in going to Tanzania?<br>
+    Visit our sister site <a href="https://www.rangersafaris.com" target="_blank">rangersafaris.com</a>
   </div>
 
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <span class="sun">☀</span>
-        pollman's
-        <span>tours and safaris ltd</span>
+        <div class="brand"><span class="sun">☀</span>pollman's</div>
+        <div class="tag">tours and safaris ltd</div>
       </a>
-      <button class="menu-toggle" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
-      <nav class="nav">
+      <nav class="nav-desktop">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
+        <a href="scheduled-safaris.html">Kenya</a>
         <a href="scheduled-safaris.html" class="active">Scheduled Safaris</a>
-        <a href="contact.html">Enquire Now</a>
+        <a href="contact.html">Tailor Made Trips</a>
+        <a href="contact.html">Uganda</a>
+        <a href="contact.html">Rwanda</a>
+        <a href="contact.html" class="btn-enquire">Enquire Now</a>
       </nav>
+      <button class="menu-btn" onclick="document.getElementById('mobileMenu').classList.add('open')">☰</button>
     </div>
   </header>
 
-  <div class="page-header">
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close" onclick="document.getElementById('mobileMenu').classList.remove('open')">×</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="scheduled-safaris.html">Kenya</a>
+      <a href="scheduled-safaris.html">Scheduled Safaris</a>
+      <a href="contact.html">Tailor Made Trips</a>
+      <a href="contact.html">Uganda</a>
+      <a href="contact.html">Rwanda</a>
+      <a href="contact.html" class="btn-enquire">Enquire Now</a>
+    </nav>
+  </div>
+
+  <div class="page-hero">
     <h1>Scheduled Safaris</h1>
-    <p>Incredible tours and safaris with weekly departures</p>
+    <p>Incredible tours and safaris</p>
   </div>
 
   <section class="section">
-    <p class="section-subtitle" style="margin-bottom:40px;">
-      Our scheduled safaris combine like-minded travellers for a shared experience. 
+    <p class="section-sub" style="margin-bottom:40px;">
+      Our scheduled safaris combine like minded travellers for a shared experience. 
       Travelling as a group offers the benefits of reduced cost and is a great way to make new friends 
-      who share an enthusiasm for Africa. All programmes are also available as private safaris.
+      who share an enthusiasm for Africa. All of our scheduled programmes are also available on request 
+      as a private safari (at a slightly higher cost) and on a private basis, can operate on any date 
+      subject to availability of accommodation.
     </p>
 
-    <div class="safari-grid">
+    <div class="safari-list">
 
-      <!-- Scenic Kenya -->
       <div class="safari-card">
-        <img src="https://images.unsplash.com/photo-1547970810-dc1eac37d174?w=600" alt="Scenic Kenya">
-        <div class="safari-card-body">
-          <div class="duration">9 DAYS / 8 NIGHTS</div>
+        <img src="images/normal_IMG_2561.jpg" alt="Scenic Kenya">
+        <div class="safari-body">
+          <div class="dur">9 DAYS / 8 NIGHTS</div>
           <h3>Scenic Kenya</h3>
-          <div class="departures">Departs weekly</div>
-          <div class="price">From £2,740.00 pp</div>
-          <p style="font-size:0.95rem; color:#555; margin-bottom:15px;">
-            Samburu, Nyahururu Falls, Rift Valley lakes & Masai Mara. Home of the Samburu Special 5 and the Great Migration.
-          </p>
+          <div class="dep">Departs weekly</div>
+          <div class="price">From £2,740.00pp</div>
+          <p>Samburu, Nyahururu Falls, Rift Valley & Masai Mara. Home of the Samburu Special 5 and the Great Migration.</p>
           <a href="scenic-kenya.html" class="btn">View Details</a>
         </div>
       </div>
 
-      <!-- Through the Rift Valley -->
       <div class="safari-card">
-        <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=600" alt="Rift Valley">
-        <div class="safari-card-body">
-          <div class="duration">5 DAYS / 4 NIGHTS</div>
+        <img src="images/Lake-Elmentaita-Serena-Camp.jpg" alt="Through the Rift Valley">
+        <div class="safari-body">
+          <div class="dur">5 DAYS / 4 NIGHTS</div>
           <h3>Through the Rift Valley</h3>
-          <div class="departures">Weekly departures</div>
-          <div class="price">From £1,295.00 pp</div>
-          <p style="font-size:0.95rem; color:#555; margin-bottom:15px;">
-            Great Rift Valley lakes & Masai Mara. Choice of tented camps or permanent lodges. Guaranteed departure for 2+ clients.
-          </p>
+          <div class="dep">Weekly departures</div>
+          <div class="price">From £1,295.00pp</div>
+          <p>Great Rift Valley lakes and Masai Mara. Choice of tented camps or permanent lodges. Guaranteed for minimum 2 clients.</p>
           <a href="contact.html" class="btn">Enquire Now</a>
         </div>
       </div>
 
-      <!-- Kenya Classic -->
       <div class="safari-card">
-        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600" alt="Kenya Classic">
-        <div class="safari-card-body">
-          <div class="duration">7 DAYS / 6 NIGHTS</div>
+        <img src="images/lions.jpg" alt="Kenya Classic">
+        <div class="safari-body">
+          <div class="dur">7 DAYS / 6 NIGHTS</div>
           <h3>Kenya Classic</h3>
-          <div class="departures">Weekly departures</div>
-          <div class="price">From £1,830.00 pp</div>
-          <p style="font-size:0.95rem; color:#555; margin-bottom:15px;">
-            Masai Mara, Lake Nakuru & Amboseli. Perfect opportunity to spot the Big-5 across three of Kenya’s most picturesque regions.
-          </p>
+          <div class="dep">Weekly departures</div>
+          <div class="price">From £1,830.00pp</div>
+          <p>Masai Mara, Lake Nakuru and Amboseli. Perfect opportunity to spot the Big-5 across three of Kenya’s most picturesque regions.</p>
           <a href="contact.html" class="btn">Enquire Now</a>
         </div>
       </div>
 
-      <!-- Mombasa Rendezvous -->
       <div class="safari-card">
-        <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=600" alt="Mombasa Rendezvous">
-        <div class="safari-card-body">
-          <div class="duration">4 DAYS / 3 NIGHTS</div>
+        <img src="images/zebs.jpg" alt="Mombasa Rendezvous">
+        <div class="safari-body">
+          <div class="dur">4 DAYS / 3 NIGHTS</div>
           <h3>Mombasa Rendezvous</h3>
-          <div class="departures">Weekly departures</div>
-          <div class="price">From £1,010.00 pp</div>
-          <p style="font-size:0.95rem; color:#555; margin-bottom:15px;">
-            Ideal for those staying in Mombasa. Tsavo East, Amboseli & Taita Hills with views of Mount Kilimanjaro.
-          </p>
+          <div class="dep">Weekly departures</div>
+          <div class="price">From £1,010.00pp</div>
+          <p>Ideally suited to those staying in Mombasa. Travels through Tsavo East, Amboseli and Taita Hills with views of Mount Kilimanjaro.</p>
           <a href="contact.html" class="btn">Enquire Now</a>
         </div>
       </div>
 
-      <!-- Kenya Odyssey to Mombasa -->
       <div class="safari-card">
-        <img src="https://images.unsplash.com/photo-1534177610974-e2b2b0b0b0b0?w=600" alt="Kenya Odyssey" onerror="this.src='https://images.unsplash.com/photo-1547970810-dc1eac37d174?w=600'">
-        <div class="safari-card-body">
-          <div class="duration">8 DAYS / 7 NIGHTS</div>
+        <img src="images/schedule-safari-image-2.jpg" alt="Kenya Odyssey" onerror="this.src='images/normal_IMG_2561.jpg'">
+        <div class="safari-body">
+          <div class="dur">8 DAYS / 7 NIGHTS</div>
           <h3>Kenya Odyssey to Mombasa</h3>
-          <div class="departures">2 departures per week</div>
-          <div class="price">From £1,795.00 pp</div>
-          <p style="font-size:0.95rem; color:#555; margin-bottom:15px;">
-            From Nairobi through the Rift Valley & Mara, ending on the shores of the Indian Ocean.
-          </p>
+          <div class="dep">2 departures per week</div>
+          <div class="price">From £1,795.00pp</div>
+          <p>Starting in Nairobi and ending on the shores of the Indian Ocean. Visits four extremely diverse wilderness areas.</p>
           <a href="contact.html" class="btn">Enquire Now</a>
         </div>
       </div>
 
-      <!-- Kilimanjaro to Mombasa -->
       <div class="safari-card">
-        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600" alt="Kilimanjaro">
-        <div class="safari-card-body">
-          <div class="duration">5 DAYS / 4 NIGHTS</div>
+        <img src="images/Amboseli.jpg" alt="Kilimanjaro to Mombasa">
+        <div class="safari-body">
+          <div class="dur">5 DAYS / 4 NIGHTS</div>
           <h3>Kilimanjaro to Mombasa</h3>
-          <div class="departures">Weekly departures</div>
-          <div class="price">From £1,230.00 pp</div>
-          <p style="font-size:0.95rem; color:#555; margin-bottom:15px;">
-            Amboseli, Tsavo West & Taita Hills ending at the spectacular Mombasa coast.
-          </p>
+          <div class="dep">Weekly departures</div>
+          <div class="price">From £1,230.00pp</div>
+          <p>Amboseli, Tsavo West and Taita Hills before continuing to Mombasa’s spectacular coast.</p>
           <a href="contact.html" class="btn">Enquire Now</a>
         </div>
       </div>
 
-      <!-- Kenya Highlights -->
       <div class="safari-card">
-        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600" alt="Kenya Highlights">
-        <div class="safari-card-body">
-          <div class="duration">7 DAYS / 6 NIGHTS</div>
+        <img src="images/giraffe.jpg" alt="Kenya Highlights">
+        <div class="safari-body">
+          <div class="dur">7 DAYS / 6 NIGHTS</div>
           <h3>Kenya Highlights</h3>
-          <div class="departures">Weekly departures</div>
-          <div class="price">From £1,795.00 pp</div>
-          <p style="font-size:0.95rem; color:#555; margin-bottom:15px;">
-            Shaba Reserve (northern specials), Lake Nakuru & Masai Mara – Big 5 and the Great Migration.
-          </p>
+          <div class="dep">Weekly departures</div>
+          <div class="price">From £1,795.00pp</div>
+          <p>Shaba Reserve (Samburu Special 5), Lake Nakuru and Masai Mara – home of the Big 5 and the Great Migration.</p>
           <a href="contact.html" class="btn">Enquire Now</a>
         </div>
       </div>
 
-      <!-- Elewana Sky Safari 10D -->
       <div class="safari-card">
-        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600" alt="Elewana Sky Safari">
-        <div class="safari-card-body">
-          <div class="duration">10 DAYS / 9 NIGHTS</div>
+        <img src="images/lions.jpg" alt="Elewana Sky Safari">
+        <div class="safari-body">
+          <div class="dur">10 DAYS / 9 NIGHTS</div>
           <h3>Elewana Sky Safari</h3>
-          <div class="departures">Weekly departures</div>
+          <div class="dep">Weekly departures</div>
           <div class="price">Price on request</div>
-          <p style="font-size:0.95rem; color:#555; margin-bottom:15px;">
-            Fly between Amboseli, Meru/Loisaba & Masai Mara. Luxury tented camps + light aircraft.
-          </p>
+          <p>Exclusive fly-in safari visiting Amboseli, Meru/Loisaba and Masai Mara in luxurious tented camps.</p>
           <a href="contact.html" class="btn">Enquire Now</a>
         </div>
       </div>
 
-      <!-- Elewana Sky Safari 8D -->
       <div class="safari-card">
-        <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=600" alt="Elewana Sky Safari 8 days">
-        <div class="safari-card-body">
-          <div class="duration">8 DAYS / 7 NIGHTS</div>
+        <img src="images/Lake-Elmentaita-Serena-Camp.jpg" alt="Elewana Sky Safari 8 days">
+        <div class="safari-body">
+          <div class="dur">8 DAYS / 7 NIGHTS</div>
           <h3>Elewana Sky Safari</h3>
-          <div class="departures">Weekly departures</div>
+          <div class="dep">Weekly departures</div>
           <div class="price">Price on request</div>
-          <p style="font-size:0.95rem; color:#555; margin-bottom:15px;">
-            Shorter fly-in version visiting Meru/Loisaba and the Masai Mara in luxurious tented camps.
-          </p>
+          <p>Shorter fly-in version combining light aircraft flights and overnight stops in luxurious tented camps.</p>
           <a href="contact.html" class="btn">Enquire Now</a>
         </div>
       </div>
@@ -181,33 +174,25 @@
     </div>
   </section>
 
+  <section class="newsletter">
+    <h2>OK, let's do this!</h2>
+    <p>To keep in touch with news from the Pollman's team and to receive our e-newsletter, please leave your e-mail address below.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for signing up!');">
+      <input type="email" placeholder="Email Address" required>
+      <button type="submit">Sign up</button>
+    </form>
+  </section>
+
   <footer class="footer">
-    <div class="footer-inner">
-      <div>
-        <h4>Pollman's Tours & Safaris</h4>
-        <p>Kenya's oldest and most respected tour operator since the 1950s.</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="scheduled-safaris.html">Scheduled Safaris</a>
-        <a href="contact.html">Enquire Now</a>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <a href="mailto:info@pollmans.com">info@pollmans.com</a>
-      </div>
+    <div>
+      <a href="#">Terms & Conditions</a> |
+      <a href="#">Privacy Policy</a>
     </div>
-    <div class="footer-bottom">
-      Copyright © 2026 Pollman's Tours and Safaris Ltd. All Rights Reserved.
+    <div style="margin:12px 0;">
+      <a href="mailto:info@pollmans.com">info@pollmans.com</a>
     </div>
+    <div class="copy">Copyright © 2026. All Rights Reserved.</div>
   </footer>
 
-  <script>
-    document.querySelector('.menu-toggle')?.addEventListener('click', function() {
-      document.querySelector('.nav').classList.toggle('open');
-    });
-  </script>
 </body>
 </html>
